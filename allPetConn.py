@@ -15,7 +15,6 @@ class DBConnection:
     @classmethod
     def create_table(cls):
         cls.cur.execute(Operations.create())
-        Log.log_create(True)
     
     @classmethod
     def display_records(cls):
